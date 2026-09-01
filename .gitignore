@@ -1,0 +1,61 @@
+# Binaries and build output
+/bin/
+/build/
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# Go workspace / build cache
+go.work
+go.work.sum
+
+# Dependency directories (if not using go modules vendoring intentionally)
+vendor/
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# IDE / editor
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Air (live reload tool, common with Fiber dev)
+tmp/
+.air.toml.bak
+
+# Coverage
+coverage.out
+coverage.html
+*.cover
+
+# Local config overrides
+config.local.yaml
+config.local.yml
+config.local.json
+
+# Docker
+docker-compose.override.yml
+
+# Database files (if using sqlite locally)
+*.db
+*.sqlite
+*.sqlite3
